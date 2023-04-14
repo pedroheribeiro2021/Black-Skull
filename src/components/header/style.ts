@@ -4,6 +4,7 @@ export const HeaderStyle = styled.header`
 
     /* display: flex; */
     /* width: 100%; */
+    position: fixed;
 
     img {
         cursor: pointer;
