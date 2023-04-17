@@ -27,4 +27,11 @@ export const GlobalStyle = createGlobalStyle`
         --orange2: #FFC470;
     }
 
+    button {
+        background-color: var(--orange1);
+        color: var(--black1);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
 `
