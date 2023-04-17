@@ -67,7 +67,6 @@ export const HeaderStyle = styled.header`
             margin-left: 16px;
 
             input {
-                background-color: var(--dark1);
                 border: none;
                 height: 85%;
                 width: 83%;
