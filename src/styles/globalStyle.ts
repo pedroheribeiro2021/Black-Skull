@@ -34,4 +34,28 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    button:hover {
+        color: var(--white);
+        background-color: var(--dark1);
+        transition: 0.8s;
+    }
+
+    input {
+        background-color: var(--dark1);
+        border-radius: 4px;
+    }
+
+    .mix-titles {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 700;
+        color: var(--white);
+
+        span {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--orange1);
+        }
+    }
+
 `
