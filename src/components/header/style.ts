@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
 
     /* display: flex; */
-    /* width: 100%; */
+    width: 100%;
     position: fixed;
 
     img {
