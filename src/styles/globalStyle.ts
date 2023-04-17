@@ -45,6 +45,10 @@ export const GlobalStyle = createGlobalStyle`
         border-radius: 4px;
     }
 
+    .arrow-btn {
+        cursor: pointer;
+    }
+
     .mix-titles {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 32px;

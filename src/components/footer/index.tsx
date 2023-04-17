@@ -102,7 +102,7 @@ export const Footer = () => {
                         <li>Assinaturas</li>
                     </ul>
                 </div>
-                <div className="signature">
+                <div id="signature" className="signature">
                     <h2 className="mix-titles">FIQUE POR <span>DENTRO</span></h2>
                     <p>Inscreva-se e seja o primeiro a saber sobre as novidades, promoções e muito mais!</p>
                     <input type="text"  placeholder="Digite seu nome"/>

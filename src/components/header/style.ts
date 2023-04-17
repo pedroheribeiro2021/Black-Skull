@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
 
-    /* display: flex; */
     width: 100%;
     position: fixed;
 
     img {
         cursor: pointer;
+    }
+
+    a {
+        color: inherit;
     }
 
     div {
@@ -33,8 +36,6 @@ export const HeaderStyle = styled.header`
         background-color: var(--black1);
         display: flex;
         align-items: center;
-        /* justify-content: space-evenly; */
-        /* gap: 50px; */
 
         .logo {
             width: 240px;
@@ -45,15 +46,22 @@ export const HeaderStyle = styled.header`
 
         ul {
             display: flex;
-            width: 620px;
 
             li {
                 color: var(--gray1);
-                width: 103px;
+                font-family: Barlow;
+                font-size: 14px;
+                font-weight: 700;
+                width: 130px;
                 height: 72px;
                 display: flex;
                 align-items: center;
-                /* gap: 55px; */
+                cursor: pointer;
+            }
+
+            li:hover {
+                color: white;
+                transition: 1s;
             }
         }
 
@@ -65,17 +73,14 @@ export const HeaderStyle = styled.header`
             border-radius: 4px;
             height: 40px;
             margin-left: 16px;
+            width: 216px;
 
             input {
                 border: none;
                 height: 85%;
                 width: 83%;
                 padding-left: 5px;
-            }
-
-            img {
-                width: 24px;
-                height: 24px;
+                color: var(--white);
             }
         }
 
@@ -83,10 +88,7 @@ export const HeaderStyle = styled.header`
             background-color: var(--black1);
             display: flex;
             gap: 20px;
-
-
         }
-
     }
 
 `

@@ -28,7 +28,7 @@ export const Home = () => {
         <HomeStyle>
             <section className="principal">
                 <div className="apresentation">
-                    <h1>
+                    <h1 className="mix-titles">
                         AJUDANDO VOCÊ A TER <span>MAIS PERFORMANCE</span>
                     </h1>
                     <p>
@@ -44,8 +44,8 @@ export const Home = () => {
                 </button>
             </section>
             <section className="releases">
-                <ul className="categorys">
-                    <img src={arrowLeft} alt="" />
+                <ul id="categorys" className="categorys">
+                    <img className="arrow-btn" src={arrowLeft} alt="" />
                     <li className="category">
                         <div>
                             <img src={product1} alt="PROTEÍNAS" />
@@ -82,11 +82,11 @@ export const Home = () => {
                         </div>
                         <span>SAÚDE</span>
                     </li>
-                    <img src={arrowRight} alt="" />
+                    <img className="arrow-btn" src={arrowRight} alt="" />
                 </ul>
                 <h2>LANÇAMENTOS</h2>
                 <ul>
-                    <img src={arrowLeft} alt="" />
+                    <img className="arrow-btn" src={arrowLeft} alt="" />
                     <li className="release">
                         <img src={product2} alt="" />
                         <div>
@@ -135,17 +135,23 @@ export const Home = () => {
                         <span className="price">R$ 349,90</span>
                         <span className="sub-price">ou 12x de R$ 29,16</span>
                     </li>
-                    <img src={arrowRight} alt="" />
+                    <img className="arrow-btn" src={arrowRight} alt="" />
                 </ul>
             </section>
-            <section className="skull-team"> 
-                <h2>CONHEÇA A TROPA <span>BLACK SKULL</span></h2>
+            <section id="skull-team" className="skull-team"> 
+                <h2 className="mix-titles">CONHEÇA A TROPA <span>BLACK SKULL</span></h2>
                 <ul>
-                    <img src={arrowLeft} alt="" />
-                    <img src={team1} alt="" />
-                    <img src={team2} alt="" />
-                    <img src={team3} alt="" />
-                    <img src={arrowRight} alt="" />
+                    <img className="arrow-btn" src={arrowLeft} alt="" />
+                    <li>
+                        <img src={team1} alt="" />
+                    </li>
+                    <li>
+                        <img src={team2} alt="" />
+                    </li>
+                    <li>
+                        <img src={team3} alt="" />
+                    </li>
+                    <img className="arrow-btn" src={arrowRight} alt="" />
                 </ul>
                 <div>
                     <button>
@@ -153,10 +159,10 @@ export const Home = () => {
                     </button>
                 </div>
             </section>
-            <section className="sales">
+            <section id="sales" className="sales">
                 <h2>PROMOÇÕES</h2>
                 <ul>
-                    <img src={arrowLeft} alt="" />
+                    <img className="arrow-btn" src={arrowLeft} alt="" />
                     <li className="release">
                         <img src={product2} alt="" />
                         <div>
@@ -205,16 +211,16 @@ export const Home = () => {
                         <span className="price">R$ 349,90</span>
                         <span className="sub-price">ou 12x de R$ 29,16</span>
                     </li>
-                    <img src={arrowRight} alt="" />
+                    <img className="arrow-btn" src={arrowRight} alt="" />
                 </ul>
             </section>
             <section className="blogs">
                 <div className="blogs-header">
-                    <h2>CONFIRA O <span>NOSSO BLOG</span></h2>
+                    <h2 className="mix-titles">CONFIRA O <span>NOSSO BLOG</span></h2>
                     <button>LER TODOS</button>
                 </div>
                 <ul>
-                    <img src={arrowLeft} alt="" />
+                    <img className="arrow-btn left" src={arrowLeft} alt="" />
                     <li className="blog">
                         <img src={blog1} alt="" />
                         <span>03.05.21</span>
@@ -239,10 +245,10 @@ export const Home = () => {
                         </p>
                         <button>LER MAIS</button>
                     </li>
-                    <img src={arrowRight} alt="" />
+                    <img className="arrow-btn" src={arrowRight} alt="" />
                 </ul>
             </section>
-            <section className="objective">
+            <section id="objective" className="objective">
                 <h2>OBJETIVOS</h2>
                 <ul className="objective-list">
                     <li>

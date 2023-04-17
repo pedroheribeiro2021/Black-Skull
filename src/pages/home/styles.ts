@@ -15,30 +15,14 @@ export const HomeStyle = styled.main`
         height: 548px;
 
         h1 {
-            /* font-family: Roboto Condensed; */
             font-size: 56px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 66px;
-            color: var(--white);
             max-width: 550px;
             padding-bottom: 16px;
-            /* max-height: 132px; */
-            /* letter-spacing: 0em; */
-            /* text-align: left; */
-
-            span {
-                color: var(--orange1);
-            }
         }
 
         p {
-            font-family: Barlow;
             font-size: 16px;
             font-weight: 400;
-            /* line-height: 20px; */
-            /* letter-spacing: 0em; */
-            /* text-align: left; */
             color: var(--white);
             max-height: 60px;
             max-width: 349px;
@@ -64,16 +48,12 @@ export const HomeStyle = styled.main`
             height: 40px;
             font-weight: 700;
             font-size: 14px;
-            /* position: relative;
-            left: 80%;
-            top: 49%; */
             position: absolute;
             left: 90%;
             top: 80%;
 
             img {
                 padding-right: 3px;
-                /* margin-top: 30px; */
             }
         }
     }
@@ -93,16 +73,14 @@ export const HomeStyle = styled.main`
     }
 
     .categorys {
-        gap: 20px;
         margin-bottom: 65px;
     }
 
     ul {
         display: flex;
-        /* width: 100%; */
 
         li {
-            display: flex;            
+            display: flex;       
         }
 
         .category {
@@ -116,12 +94,10 @@ export const HomeStyle = styled.main`
             div {
                 background: #F1F1F1;
                 border-radius: 50%;
-            }
-
-            img {
-                /* height: 108px; */
-                /* width: 108px; */
-                padding: 35px;
+                
+                img {
+                    padding: 35px;
+                }
             }
 
             span {
@@ -130,22 +106,6 @@ export const HomeStyle = styled.main`
                 width: 100%;
                 text-align: center;
             }
-        }
-
-        .price {
-            width: 100%;
-            font-size: 22px;
-            font-weight: 700;
-            text-align: left;
-            color: var(--orange1);
-        }
-
-        .sub-price {
-            width: 100%;
-            font-size: 14px;
-            font-weight: 400;
-            text-align: left;
-            color: var(--dark3);
         }
     }
 
@@ -159,8 +119,6 @@ export const HomeStyle = styled.main`
             padding-left: 24px;
 
             img {
-                /* height: 165px; */
-                /* width: 165px; */
                 margin: 0 auto;
             }
 
@@ -174,13 +132,11 @@ export const HomeStyle = styled.main`
                 img {
                     height: 24px;
                     width: 24px;
-                    /* text-align: center; */
                 }
             }
 
             h3 {
                 width: 70%;
-                /* height: 3%; */
                 font-size: 12px;
                 font-weight: 600;
                 text-align: left;
@@ -188,25 +144,32 @@ export const HomeStyle = styled.main`
             }
         }
 
+    .price {
+            width: 100%;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: left;
+            color: var(--orange1);
+    }
+
+    .sub-price {
+            width: 100%;
+            margin-bottom: 5%;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            color: var(--dark3);
+    }
+
     .skull-team {
             background-image: url(${backgroundTeam});
             height: 461px;
             margin-bottom: 88px;
             
             h2 {
-                font-family: 'Roboto Condensed', sans-serif;
                 font-size: 40px;
-                font-style: italic;
-                font-weight: 700;
-                text-align: left;
-                color: var(--white);
                 margin-left: 19%;
                 padding-top: 20px;
-
-                span {
-                    font-family: 'Roboto Condensed', sans-serif;
-                    color: var(--orange1);
-                }
             }
 
             ul {
@@ -215,6 +178,15 @@ export const HomeStyle = styled.main`
                 align-content: center;
                 gap: 20px;
                 margin-top: 30px;
+
+                li {
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                }
+
+                li:hover {
+                    border: 1px solid white;
+                }
             }
 
             div {
@@ -260,33 +232,25 @@ export const HomeStyle = styled.main`
             }
 
             ul {
-                gap: 20px;
+
+                .left {
+                    margin: 0 0 0 15px;
+                }
+
+                li {
+                    margin: 0 10px;
+                }
             }
         }
 
         .blogs-header {
             display: flex;
             justify-content: space-between;
-            padding: 2% 5%;
-
-            h2 {
-                font-family: 'Roboto Condensed', sans-serif;
-                font-size: 32px;
-                font-style: italic;
-                font-weight: 700;
-                color: var(--white);
-
-                span {
-                    color: var(--orange1);
-                    font-family: 'Roboto Condensed', sans-serif;
-                    font-weight: 700;
-                }
-            }
+            padding: 40px 90px 24px 56px;
         }
 
         .blog {
             cursor: pointer;
-            /* flex-wrap: wrap; */
             flex-direction: column;
             background-color: var(--dark1);
             border: 1px solid var(--dark3);
@@ -299,6 +263,7 @@ export const HomeStyle = styled.main`
                 color: var(--gray2);
                 margin-bottom: 16px;
                 margin-left: 24px;
+                font-size: 14px;
             }
 
             p {
@@ -306,12 +271,17 @@ export const HomeStyle = styled.main`
                 width: 60%;
                 margin-bottom: 24px;
                 margin-left: 24px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
             }
 
             button {
                 width: 30%;
                 margin-bottom: 24px;
                 margin-left: 24px;
+                font-weight: 700;
+                font-size: 14px;
             }
         }
 

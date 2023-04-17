@@ -11,23 +11,35 @@ export const Header = () => {
     return (
         <HeaderStyle>
             <div>
-                <a href="">FALE CONOSCO</a>
+                <a href="#signature">FALE CONOSCO</a>
                 <p> <img src={truck} alt="caminhão" />  FRETE GRÁTIS A PARTIR DE R$ 199,90 PARA TODO BRASIL</p>
                 <a href="https://blog.blackskullusa.com.br/">BLOG.BLACKSKULL</a>
             </div>
             <nav>
                 <img className="logo" src={logo} alt="logo marca black skull" />
                 <ul>
-                    <li>CATEGORIAS</li>
-                    <li>VESTUARIO</li>
-                    <li>OBJETIVOS</li>
-                    <li>PROMOÇÕES</li>
-                    <li>ATLETAS</li>
-                    <li>ASSINATURA</li>
+                    <li>
+                        <a href="#categorys">CATEGORIAS</a>
+                    </li>
+                    <li>
+                        <a href="#blank">VESTUARIO</a>
+                    </li>
+                    <li>
+                        <a href="#objective">OBJETIVOS</a>
+                    </li>
+                    <li>
+                        <a href="#sales">PROMOÇÕES</a>
+                    </li>
+                    <li>
+                        <a href="#skull-team">ATLETAS</a>
+                    </li>
+                    <li>
+                        <a href="#signature">ASSINATURA</a>
+                    </li>
                 </ul>
                 <form action="">
                     <input type="text" placeholder="Buscar" />
-                    <img src={lupa} alt="" />
+                    <img className="search" src={lupa} alt="" />
                 </form>
                 <div className="menu-buttons">
                     <img src={user} alt="" />
